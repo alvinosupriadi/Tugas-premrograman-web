@@ -1,0 +1,184 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.additional-content,
+.store-description,
+.contact-info,
+.map {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.additional-content h3,
+.store-description h3,
+.contact-info h3,
+.map h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.additional-content ul,
+.contact-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.additional-content ul li,
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #7f8c8d;
+}
+
+.contact-info ul li a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.map iframe {
+    width: 40%;
+    height: 100px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .additional-content,
+    .store-description,
+    .contact-info,
+    .map {
+        text-align: center;
+    }
+}
